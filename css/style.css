@@ -1,19 +1,73 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #dee2e2;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #1f2933;
+    line-height: 1.6;
     padding: 20px;
 }
 
-h1 {
+header {
+    background-color: #0b3c5d;
+    padding: 30px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #ffffff;
     text-align: center;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+.descricao {
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+    font-size: 1rem;
+    color: #374151;
 }
 
 .grid {
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 24px;
 }
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    text-align: center;
+    font-size: 1rem;
+    color: #0b3c5d;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
 @media (max-width: 1200px) {
     .grid {
         grid-template-columns: repeat(3, 1fr);
@@ -21,29 +75,11 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
     .grid {
         grid-template-columns: repeat(1, 1fr);
     }
-}
-
-
-.card {
-    background: #bdbbbb;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 2px 6px hwb(0 0% 100%);
-}
-
-.card img {
-    width: 100%;
-    border-radius: 4px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-.card {
-    background: #bdbbbb;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 2px 6px hwb(0 0% 100%);
-    text-align: center;   /* CENTRALIZA TODO O CONTEÚDO */
 }
