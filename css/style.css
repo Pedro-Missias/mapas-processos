@@ -2,8 +2,8 @@
     --azul-principal: #1351B4;
     --azul-escuro: #1351B4;
     --azul-claro: #1351B4;
-    --cinza-texto: #333333;
-    --cinza-fundo: #F8F8F8;
+    --cinza-texto: #020000c4;
+    --cinza-fundo: #566ef7;
     --branco: #FFFFFF;
 }
 
@@ -66,7 +66,7 @@ main {
 
 .card {
     background-color: var(--branco);
-    border: 1px solid #DDD;
+    border: 1px solid #7e7b83;
     border-radius: 4px;
     padding: 12px;
     text-align: center;
@@ -74,7 +74,7 @@ main {
 }
 
 .card:hover {
-    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    box-shadow: 0 4px 10px rgb(235, 111, 10);
 }
 
 .card h3 {
@@ -179,7 +179,7 @@ main {
     width: 900px;
     height: auto;
     border-radius: 4px;
-    background-color: #ffffff;
+    background-color: #ffffff00;
     padding: 12px;
 }
 .secao-mapas {
